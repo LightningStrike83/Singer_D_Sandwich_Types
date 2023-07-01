@@ -30,6 +30,12 @@ img {
     margin-bottom: 20px;
 }
 
+#grassy, #rocky, #watery, #caves, #underground, #hidden {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 #area_names {
     display: flex;
     flex-direction: row;
@@ -45,6 +51,7 @@ img {
 #area_names p:not(#choose) {
     text-decoration: underline;
     color: blue;
+    cursor: pointer;
 }
 
 #type_table {
@@ -54,16 +61,38 @@ img {
 }
 
 .type_box {
-    max-height: 100px;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid black;
 }
 
 .type_title {
-    width: 100px;
-    max-height: 100px;
+    max-width: 100px;
     text-align: center;
     border-right: 1px solid black;
-    padding-top: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.images div {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.type_title p {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
