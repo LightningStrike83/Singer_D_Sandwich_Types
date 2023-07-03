@@ -96,3 +96,11 @@ img {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.venomoth, .masquerain, .volcarona, .lokix, .slither_wing, .umbreon, .sneasel, .murkrow, .sableye, .honchkrow, .weavile, .bisharp, .zweilous, .brute_bonnet, .iron_jugulis, .roaring_moon, .altaria, .gible, .gabite, .dreepy, .drakloak, .sandy_shocks, .pawmi, .pawmo, .iron_hands, .iron_thorns, .raichu, .tadbulb, .bellibolt, .iron_valiant, .floette, .scream_tail, .flutter_mane, .meditite, .medicham, .flamigo, .hawlucha, .great_tusk, .talonflame, .iron_moth, .jumpluff, .braviary, .corviknight, .golduck, .vaporeon, .espeon, .buizel, .floatzel, .iron_bundle, .greavard, .houndstone, .iron_treads, .gogoat, .phanpy, .donphan, .dugtrio, .girafarig, .chansey, .farigiraf, .dunsparce, .dudunsparce, .glimmora, .glimmet, .espathra, .lycanroc, .lycanroc_m, .nacli, .naclstack, .garganacl, .cufant, .copperajah {
+    display: none;
+}
+
+.grassy_show, .rocky_show, .watery_show, .caves_show, .underground_show, .hidden_show {
+    display: block;
+}
