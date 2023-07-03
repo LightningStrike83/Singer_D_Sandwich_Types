@@ -6,6 +6,7 @@ let caves = document.querySelector('#caves');
 let rocky = document.querySelector('#rocky');
 let underground = document.querySelector('#underground');
 let hidden = document.querySelector('#hidden');
+let legendArea = document.querySelector('#legend_click');
 var grassyCheckbox = document.querySelector('#grassy_checkbox');
 var wateryCheckbox = document.querySelector('#watery_checkbox');
 var cavesCheckbox = document.querySelector('#caves_checkbox');
@@ -573,6 +574,11 @@ function hiddenCheckboxClicked(event) {
     event.stopPropagation();
 }
 
+function legendDisplay() {
+    let legendInfo = document.querySelector('#legend_info');
+    legendInfo.style.display = (legendInfo.style.display === 'block') ? 'none' : 'block';
+}
+
 grassy.addEventListener('click', grassyPokemon);
 grassyCheckbox.addEventListener('click', grassyCheckboxClicked);
 watery.addEventListener('click', wateryPokemon);
@@ -585,3 +591,4 @@ underground.addEventListener('click', undergroundPokemon);
 undergroundCheckbox.addEventListener('click', undergroundCheckboxClicked);
 hidden.addEventListener('click', hiddenPokemon);
 hiddenCheckbox.addEventListener('click', hiddenCheckboxClicked);
+legendArea.addEventListener('click', legendDisplay);

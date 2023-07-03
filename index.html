@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="container" class="grid-con">
-        <section class="col-span-full">
+        <section class="col-span-full" id="title">
             <h3 id="main_title">Find Which Pokemon Your Sandwich Will Spawn</h3>
         </section>
 
@@ -21,730 +21,750 @@
             <p id="instructions_text">Need some help figuring out which Pokemon will spawn thanks to your sandwich in Pokemon Scarlet and Violet?<br> Click a location down below and the type table will be populated with the Pokemon that will be spawning!</p>
         </section>
 
+        <section id="legend_area" class="col-start-4 col-end-5 m-col-start-9 m-col-end-13">
+            <div id="legend_click">
+                <span id="question_symbol">?</span>
+                <p id="legend">Legend</p>
+            </div>
+            <div id="legend_info">
+                <p>* = Post-story only. (After the credits)</p>
+                <p>(S) or <span class="scarlet">Red Text</span> = Pokemon Scarlet only.</p>
+                <p>(V) or <span class="violet">Purple Text</span> = Pokemon Violet only.</p>
+            </div>
+        </section>
+
         <section id="area_names" class="col-span-full">
             <p id="choose">Choose Your Location:</p>
             <div id="grassy">
                 <input type="checkbox" id="grassy_checkbox">
-                <p>Area Zero (Grassy Terrain)</p>
+                <p class="area_name">Area Zero (Grassy Terrain)</p>
             </div>
             <div id="rocky">
                 <input type="checkbox" id="rocky_checkbox">
-                <p>Area Zero (Rocky Terrain)</p>
+                <p class="area_name">Area Zero (Rocky Terrain)</p>
             </div>
             <div id="watery">
                 <input type="checkbox" id="watery_checkbox">
-                <p>Area Zero (Watery Terrain)</p>
+                <p class="area_name">Area Zero (Watery Terrain)</p>
             </div>
             <div id="caves">
                 <input type="checkbox" id="caves_checkbox">
-                <p>Area Zero (Non-Hidden Caves)</p>
+                <p class="area_name">Area Zero (Non-Hidden Caves)</p>
             </div>
             <div id="underground">
                 <input type="checkbox" id="underground_checkbox">
-                <p>Area Zero Underground</p>
+                <p class="area_name">Area Zero Underground</p>
             </div>
             <div id="hidden">
                 <input type="checkbox" id="hidden_checkbox">
-                <p>Area Zero Hidden Cave</p>
+                <p class="area_name">Area Zero Hidden Cave</p>
             </div>
         </section>
 
         <section id="type_table" class="col-span-full">
             <div class="type_box" id="type_1">
                 <div class="type_title">
-                    <p id="bug">Bug</p>
+                    <p class="type_name" id="bug">Bug</p>
                 </div>
                 <div class="images">
                     <div class="venomoth">
                         <img src="images/venomoth.png" alt="Venomoth">
-                        <p>Venomoth</p>
+                        <p class="pokemon_name">Venomoth</p>
                     </div>
 
                     <div class="masquerain">
                         <img src="images/masquerain.png" alt="Masquerain">
-                        <p>Masquerain</p>
+                        <p class="pokemon_name">Masquerain</p>
                     </div>
 
                     <div class="volcarona">
                         <img src="images/volcarona.png" alt="Volcarona">
-                        <p>Volcarona</p>
+                        <p class="pokemon_name">Volcarona</p>
                     </div>
 
                     <div class="lokix">
                         <img src="images/lokix.png" alt="Lokix">
-                        <p>Lokix</p>
+                        <p class="pokemon_name">Lokix</p>
                     </div>
 
                     <div class="slither_wing">
                         <img src="images/slither_wing.png" alt="Slither Wing">
-                        <p>Slither Wing</p>
+                        <p class="pokemon_name scarlet">Slither Wing*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_2">
                 <div class="type_title">
-                    <p id="dark">Dark</p>
+                    <p class="type_name" id="dark">Dark</p>
                 </div>
                 <div class="images">
                     <div class="umbreon">
                         <img src="images/umbreon.png" alt="Umbreon">
-                        <p>Umbreon</p>
+                        <p class="pokemon_name">Umbreon</p>
                     </div>
 
                     <div class="murkrow">
                         <img src="images/murkrow.png" alt="Murkrow">
-                        <p>Murkrow</p>
+                        <p class="pokemon_name">Murkrow</p>
                     </div>
 
                     <div class="sneasel">
                         <img src="images/sneasel.png" alt="Sneasel">
-                        <p>Sneasel</p>
+                        <p class="pokemon_name">Sneasel</p>
                     </div>
 
                     <div class="sableye">
                         <img src="images/sableye.png" alt="Sableye">
-                        <p>Sableye</p>
+                        <p class="pokemon_name">Sableye</p>
                     </div>
                     
                     <div class="honchkrow">
                         <img src="images/honchkrow.png" alt="Honchkrow">
-                        <p>Honchkrow</p>
+                        <p class="pokemon_name">Honchkrow</p>
                     </div>
 
                     <div class="weavile">
                         <img src="images/weavile.png" alt="Weavile">
-                        <p>Weavile</p>
+                        <p class="pokemon_name">Weavile</p>
                     </div>
 
                     <div class="bisharp">
                         <img src="images/bisharp.png" alt="Bisharp">
-                        <p>Bisharp</p>
+                        <p class="pokemon_name">Bisharp</p>
                     </div>
 
                     <div class="zweilous">
                         <img src="images/zweilous.png" alt="Zweilous">
-                        <p>Zweilous</p>
+                        <p class="pokemon_name scarlet">Zweilous</p>
                     </div>
 
                     <div class="lokix">
                         <img src="images/lokix.png" alt="Lokix">
-                        <p>Lokix</p>
+                        <p class="pokemon_name">Lokix</p>
                     </div>
 
                     <div class="brute_bonnet">
                         <img src="images/brute_bonnet.png" alt="Brute Bonnet">
-                        <p>Brute Bonnet</p>
+                        <p class="pokemon_name">Brute Bonnet</p>
                     </div>
 
                     <div class="iron_jugulis">
                         <img src="images/iron_jugulis.png" alt="Iron Jugulis">
-                        <p>Iron Jugulis</p>
+                        <p class="pokemon_name violet">Iron Jugulis*</p>
                     </div>
 
                     <div class="roaring_moon">
                         <img src="images/roaring_moon.png" alt="Roaring Moon">
-                        <p>Roaring Moon</p>
+                        <p class="pokemon_name scarlet">Roaring Moon*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_3">
                 <div class="type_title">
-                    <p id="dragon">Dragon</p>
+                    <p class="type_name" id="dragon">Dragon</p>
                 </div>
                 <div class="images">
                     <div class="altaria">
                         <img src="images/altaria.png" alt="Altaria">
-                        <p>Altaria</p>
+                        <p class="pokemon_name">Altaria</p>
                     </div>
 
                     <div class="gible">
                         <img src="images/gible.png" alt="Gible">
-                        <p>Gible</p>
+                        <p class="pokemon_name">Gible</p>
                     </div>
 
                     <div class="gabite">
                         <img src="images/gabite.png" alt="Gabite">
-                        <p>Gabite</p>
+                        <p class="pokemon_name">Gabite</p>
                     </div>
 
                     <div class="zweilous">
                         <img src="images/zweilous.png" alt="Zweilous">
-                        <p>Zweilous</p>
+                        <p class="pokemon_name scarlet">Zweilous</p>
                     </div>
 
                     <div class="dreepy">
                         <img src="images/dreepy.png" alt="Dreepy">
-                        <p>Dreepy</p>
+                        <p class="pokemon_name violet">Dreepy</p>
                     </div>
 
                     <div class="drakloak">
                         <img src="images/drakloak.png" alt="Drakloak">
-                        <p>Drakloak</p>
+                        <p class="pokemon_name violet">Drakloak</p>
                     </div>
 
                     <div class="roaring_moon">
                         <img src="images/roaring_moon.png" alt="Roaring Moon">
-                        <p>Roaring Moon</p>
+                        <p class="pokemon_name scarlet">Roaring Moon*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_4">
                 <div class="type_title">
-                    <p id="electric">Electric</p>
+                    <p class="type_name" id="electric">Electric</p>
                 </div>
                 <div class="images">
                     <div class="raichu">
                         <img src="images/raichu.png" alt="Raichu">
-                        <p>Raichu</p>
+                        <p class="pokemon_name">Raichu</p>
                     </div>
 
                     <div class="pawmi">
                         <img src="images/pawmi.png" alt="Pawmi">
-                        <p>Pawmi</p>
+                        <p class="pokemon_name">Pawmi</p>
                     </div>
 
                     <div class="pawmo">
                         <img src="images/pawmo.png" alt="Pawmo">
-                        <p>Pawmo</p>
+                        <p class="pokemon_name">Pawmo</p>
                     </div>
 
                     <div class="tadbulb">
                         <img src="images/tadbulb.png" alt="Tadbulb">
-                        <p>Tadbulb</p>
+                        <p class="pokemon_name">Tadbulb</p>
                     </div>
 
                     <div class="bellibolt">
                         <img src="images/bellibolt.png" alt="Bellibolt">
-                        <p>Bellibolt</p>
+                        <p class="pokemon_name">Bellibolt</p>
                     </div>
 
                     <div class="sandy_shocks">
                         <img src="images/sandy_shocks.png" alt="Sandy Shocks">
-                        <p>Sandy Shocks</p>
+                        <p class="pokemon_name scarlet">Sandy Shocks*</p>
                     </div>
 
                     <div class="iron_hands">
                         <img src="images/iron_hands.png" alt="Iron Hands">
-                        <p>Iron Hands</p>
+                        <p class="pokemon_name violet">Iron Hands*</p>
                     </div>
 
                     <div class="iron_thorns">
                         <img src="images/iron_thorns.png" alt="Iron Thorns">
-                        <p>Iron Thorns</p>
+                        <p class="pokemon_name violet">Iron Thorns*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_5">
                 <div class="type_title">
-                    <p id="fairy">Fairy</p>
+                    <p class="type_name" id="fairy">Fairy</p>
                 </div>
                 <div class="images">
                     <div class="floette">
                         <img src="images/floette-red.png" alt="Floette">
-                        <p>Floette</p>
+                        <p class="pokemon_name">Floette</p>
                     </div>
 
                     <div class="scream_tail">
                         <img src="images/scream_tail.png" alt="Scream Tail">
-                        <p>Scream Tail</p>
+                        <p class="pokemon_name scarlet">Scream Tail*</p>
                     </div>
 
                     <div class="flutter_mane">
                         <img src="images/flutter_mane.png" alt="Flutter Mane">
-                        <p>Flutter Mane</p>
+                        <p class="pokemon_name scarlet">Flutter Mane*</p>
                     </div>
 
                     <div class="iron_valiant">
                         <img src="images/iron_valiant.png" alt="Iron Valiant">
-                        <p>Iron Valiant</p>
+                        <p class="pokemon_name violet">Iron Valiant*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_6">
                 <div class="type_title">
-                    <p id="fighting">Fighting</p>
+                    <p class="type_name" id="fighting">Fighting</p>
                 </div>
                 <div class="images">
                     <div class="meditite">
                         <img src="images/meditite.png" alt="Meditite">
-                        <p>Meditite</p>
+                        <p class="pokemon_name">Meditite</p>
                     </div>
 
                     <div class="medicham">
                         <img src="images/medicham.png" alt="Medicham">
-                        <p>Medicham</p>
+                        <p class="pokemon_name">Medicham</p>
                     </div>
 
                     <div class="hawlucha">
                         <img src="images/hawlucha.png" alt="Hawlucha">
-                        <p>Hawlucha</p>
+                        <p class="pokemon_name">Hawlucha</p>
                     </div>
 
                     <div class="pawmo">
                         <img src="images/pawmo.png" alt="Pawmo">
-                        <p>Pawmo</p>
+                        <p class="pokemon_name">Pawmo</p>
                     </div>
 
                     <div class="flamigo">
                         <img src="images/flamigo.png" alt="Flamigo">
-                        <p>Flamigo</p>
+                        <p class="pokemon_name">Flamigo</p>
                     </div>
 
                     <div class="great_tusk">
                         <img src="images/great_tusk.png" alt="Great Tusk">
-                        <p>Great Tusk</p>
+                        <p class="pokemon_name scarlet">Great Tusk*</p>
                     </div>
 
                     <div class="slither_wing">
                         <img src="images/slither_wing.png" alt="Slither Wing">
-                        <p>Slither Wing</p>
+                        <p class="pokemon_name scarlet">Slither Wing*</p>
                     </div>
 
                     <div class="iron_hands">
                         <img src="images/iron_hands.png" alt="Iron Hands">
-                        <p>Iron Hands</p>
+                        <p class="pokemon_name violet">Iron Hands*</p>
                     </div>
 
                     <div class="iron_valiant">
                         <img src="images/iron_valiant.png" alt="Iron Valiant">
-                        <p>Iron Valiant</p>
+                        <p class="pokemon_name violet">Iron Valiant*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_7">
                 <div class="type_title">
-                    <p id="fire">Fire</p>
+                    <p class="type_name" id="fire">Fire</p>
                 </div>
                 <div class="images">
                     <div class="volcarona">
                         <img src="images/volcarona.png" alt="Volcarona">
-                        <p>Volcarona</p>
+                        <p class="pokemon_name">Volcarona</p>
                     </div>
 
                     <div class="talonflame">
                         <img src="images/talonflame.png" alt="Talonflame">
-                        <p>Talonflame</p>
+                        <p class="pokemon_name">Talonflame</p>
                     </div>
 
                     <div class="iron_moth">
                         <img src="images/iron_moth.png" alt="Iron Moth">
-                        <p>Iron Moth</p>
+                        <p class="pokemon_name violet">Iron Moth*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_8">
                 <div class="type_title">
-                    <p id="flying">Flying</p>
+                    <p class="type_name" id="flying">Flying</p>
                 </div>
                 <div class="images">
                     <div class="jumpluff">
                         <img src="images/jumpluff.png" alt="Jumpluff">
-                        <p>Jumpluff</p>
+                        <p class="pokemon_name">Jumpluff</p>
                     </div>
 
                     <div class="murkrow">
                         <img src="images/murkrow.png" alt="Murkrow">
-                        <p>Murkrow</p>
+                        <p class="pokemon_name">Murkrow</p>
                     </div>
 
                     <div class="masquerain">
                         <img src="images/masquerain.png" alt="Masquerain">
-                        <p>Masquerain</p>
+                        <p class="pokemon_name">Masquerain</p>
                     </div>
 
                     <div class="altaria">
                         <img src="images/altaria.png" alt="Altaria">
-                        <p>Altaria</p>
+                        <p class="pokemon_name">Altaria</p>
                     </div>
                     
                     <div class="honchkrow">
                         <img src="images/honchkrow.png" alt="Honchkrow">
-                        <p>Honchkrow</p>
+                        <p class="pokemon_name">Honchkrow</p>
                     </div>
 
                     <div class="braviary">
                         <img src="images/braviary.png" alt="Braviary">
-                        <p>Braviary</p>
+                        <p class="pokemon_name">Braviary</p>
                     </div>
 
                     <div class="talonflame">
                         <img src="images/talonflame.png" alt="Talonflame">
-                        <p>Talonflame</p>
+                        <p class="pokemon_name">Talonflame</p>
                     </div>
 
                     <div class="hawlucha">
                         <img src="images/hawlucha.png" alt="Hawlucha">
-                        <p>Hawlucha</p>
+                        <p class="pokemon_name">Hawlucha</p>
                     </div>
 
                     <div class="corviknight">
                         <img src="images/corviknight.png" alt="Corviknight">
-                        <p>Corviknight</p>
+                        <p class="pokemon_name">Corviknight</p>
                     </div>
 
                     <div class="flamigo">
                         <img src="images/flamigo.png" alt="Flamigo">
-                        <p>Flamigo</p>
+                        <p class="pokemon_name">Flamigo</p>
                     </div>
 
                     <div class="iron_jugulis">
                         <img src="images/iron_jugulis.png" alt="Iron Jugulis">
-                        <p>Iron Jugulis</p>
+                        <p class="pokemon_name violet">Iron Jugulis*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_9">
                 <div class="type_title">
-                    <p id="ghost">Ghost</p>
+                    <p class="type_name" id="ghost">Ghost</p>
                 </div>
                 <div class="images">
                     <div class="sableye">
                         <img src="images/sableye.png" alt="Sableye">
-                        <p>Sableye</p>
+                        <p class="pokemon_name">Sableye</p>
                     </div>
 
                     <div class="dreepy">
                         <img src="images/dreepy.png" alt="Dreepy">
-                        <p>Dreepy</p>
+                        <p class="pokemon_name violet">Dreepy</p>
                     </div>
 
                     <div class="drakloak">
                         <img src="images/drakloak.png" alt="Drakloak">
-                        <p>Drakloak</p>
+                        <p class="pokemon_name">Drakloak</p>
                     </div>
 
                     <div class="greavard">
                         <img src="images/greavard.png" alt="Greavard">
-                        <p>Greavard</p>
+                        <p class="pokemon_name">Greavard</p>
                     </div>
 
                     <div class="houndstone">
                         <img src="images/houndstone.png" alt="Houndstone">
-                        <p>Houndstone</p>
+                        <p class="pokemon_name">Houndstone</p>
                     </div>
 
                     <div class="flutter_mane">
                         <img src="images/flutter_mane.png" alt="Flutter Mane">
-                        <p>Flutter Mane</p>
+                        <p class="pokemon_name scarlet">Flutter Mane*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_10">
                 <div class="type_title">
-                    <p id="grass">Grass</p>
+                    <p class="type_name" id="grass">Grass</p>
                 </div>
                 <div class="images">
                     <div class="jumpluff">
                         <img src="images/jumpluff.png" alt="Jumpluff">
-                        <p>Jumpluff</p>
+                        <p class="pokemon_name">Jumpluff</p>
                     </div>
 
                     <div class="gogoat">
                         <img src="images/gogoat.png" alt="Gogoat">
-                        <p>Gogoat</p>
+                        <p class="pokemon_name">Gogoat</p>
                     </div>
 
                     <div class="brute_bonnet">
                         <img src="images/brute_bonnet.png" alt="Brute Bonnet">
-                        <p>Brute Bonnet</p>
+                        <p class="pokemon_name scarlet">Brute Bonnet*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_11">
                 <div class="type_title">
-                    <p id="ground">Ground</p>
+                    <p class="type_name" id="ground">Ground</p>
                 </div>
                 <div class="images">
                     <div class="dugtrio">
                         <img src="images/dugtrio.png" alt="Dugtrio">
-                        <p>Dugtrio</p>
+                        <p class="pokemon_name">Dugtrio</p>
                     </div>
 
                     <div class="phanpy">
                         <img src="images/phanpy.png" alt="Phanpy">
-                        <p>Phanpy</p>
+                        <p class="pokemon_name">Phanpy</p>
                     </div>
 
                     <div class="donphan">
                         <img src="images/donphan.png" alt="Donphan">
-                        <p>Donphan</p>
+                        <p class="pokemon_name">Donphan</p>
                     </div>
 
                     <div class="gible">
                         <img src="images/gible.png" alt="Gible">
-                        <p>Gible</p>
+                        <p class="pokemon_name">Gible</p>
                     </div>
 
                     <div class="gabite">
                         <img src="images/gabite.png" alt="Gabite">
-                        <p>Gabite</p>
+                        <p class="pokemon_name">Gabite</p>
                     </div>
 
                     <div class="great_tusk">
                         <img src="images/great_tusk.png" alt="Great Tusk">
-                        <p>Great Tusk</p>
+                        <p class="pokemon_name scarlet">Great Tusk*</p>
                     </div>
 
                     <div class="sandy_shocks">
                         <img src="images/sandy_shocks.png" alt="Sandy Shocks">
-                        <p>Sandy Shocks</p>
+                        <p class="pokemon_name scarlet">Sandy Shocks*</p>
                     </div>
 
                     <div class="iron_treads">
                         <img src="images/iron_treads.png" alt="Iron Treads">
-                        <p>Iron Treads</p>
+                        <p class="pokemon_name violet">Iron Treads*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_12">
                 <div class="type_title">
-                    <p id="ice">Ice</p>
+                    <p class="type_name" id="ice">Ice</p>
                 </div>
                 <div class="images">
                     <div class="sneasel">
                         <img src="images/sneasel.png" alt="Sneasel">
-                        <p>Sneasel</p>
+                        <p class="pokemon_name">Sneasel</p>
                     </div>
 
                     <div class="weavile">
                         <img src="images/weavile.png" alt="Weavile">
-                        <p>Weavile</p>
+                        <p class="pokemon_name">Weavile</p>
                     </div>
 
                     <div class="iron_bundle">
                         <img src="images/iron_bundle.png" alt="Iron Bundle">
-                        <p>Iron Bundle</p>
+                        <p class="pokemon_name violet">Iron Bundle*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_13">
                 <div class="type_title">
-                    <p id="normal">Normal</p>
+                    <p class="type_name" id="normal">Normal</p>
                 </div>
                 <div class="images">
                     <div class="chansey">
                         <img src="images/chansey.png" alt="Chansey">
-                        <p>Chansey</p>
+                        <p class="pokemon_name">Chansey</p>
                     </div>
 
                     <div class="girafarig">
                         <img src="images/girafarig.png" alt="girafarig">
-                        <p>Girafarig</p>
+                        <p class="pokemon_name">Girafarig</p>
                     </div>
 
                     <div class="dunsparce">
                         <img src="images/dunsparce.png" alt="Dunsparce">
-                        <p>Dunsparce</p>
+                        <p class="pokemon_name">Dunsparce</p>
                     </div>
                     
                     <div class="braviary">
                         <img src="images/braviary.png" alt="Braviary">
-                        <p>Braviary</p>
+                        <p class="pokemon_name">Braviary</p>
                     </div>
                     
                     <div class="farigiraf">
                         <img src="images/farigiraf.png" alt="Farigiraf">
-                        <p>Farigiraf</p>
+                        <p class="pokemon_name">Farigiraf</p>
                     </div>
 
                     <div class="dudunsparce">
                         <img src="images/dudunsparce_two.png" alt="Dudunsparce">
-                        <p>Dudunsparce</p>
+                        <p class="pokemon_name">Dudunsparce</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_14">
                 <div class="type_title">
-                    <p id="poison">Poison</p>
+                    <p class="type_name" id="poison">Poison</p>
                 </div>
                 <div class="images">
                     <div class="venomoth">
                         <img src="images/venomoth.png" alt="Venomoth">
-                        <p>Venomoth</p>
+                        <p class="pokemon_name">Venomoth</p>
                     </div>
 
                     <div class="glimmet">
                         <img src="images/glimmet.png" alt="Glimmet">
-                        <p>Glimmet</p>
+                        <p class="pokemon_name">Glimmet</p>
                     </div>
 
                     <div class="glimmora">
                         <img src="images/glimmora.png" alt="Glimmora">
-                        <p>Glimmora</p>
+                        <p class="pokemon_name">Glimmora</p>
                     </div>
 
                     <div class="iron_moth">
                         <img src="images/iron_moth.png" alt="Iron Moth">
-                        <p>Iron Moth</p>
+                        <p class="pokemon_name violet">Iron Moth*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_15">
                 <div class="type_title">
-                    <p id="psychic">Psychic</p>
+                    <p class="type_name" id="psychic">Psychic</p>
                 </div>
                 <div class="images">
                     <div class="espeon">
                         <img src="images/espeon.png" alt="Espeon">
-                        <p>Espeon</p>
+                        <p class="pokemon_name">Espeon</p>
                     </div>
 
                     <div class="girafarig">
                         <img src="images/girafarig.png" alt="girafarig">
-                        <p>Girafarig</p>
+                        <p class="pokemon_name">Girafarig</p>
                     </div>
 
                     <div class="meditite">
                         <img src="images/meditite.png" alt="Meditite">
-                        <p>Meditite</p>
+                        <p class="pokemon_name">Meditite</p>
                     </div>
 
                     <div class="medicham">
                         <img src="images/medicham.png" alt="Medicham">
-                        <p>Medicham</p>
+                        <p class="pokemon_name">Medicham</p>
                     </div>
 
                     <div class="espathra">
                         <img src="images/espathra.png" alt="Espathra">
-                        <p>Espathra</p>
+                        <p class="pokemon_name">Espathra</p>
                     </div>
 
                     <div class="farigiraf">
                         <img src="images/farigiraf.png" alt="Farigiraf">
-                        <p>Farigiraf</p>
+                        <p class="pokemon_name">Farigiraf</p>
                     </div>
 
                     <div class="scream_tail">
                         <img src="images/scream_tail.png" alt="Scream Tail">
-                        <p>Scream Tail</p>
+                        <p class="pokemon_name scarlet">Scream Tail*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_16">
                 <div class="type_title">
-                    <p id="rock">Rock</p>
+                    <p class="type_name" id="rock">Rock</p>
                 </div>
                 <div class="images">
                     <div class="lycanroc">
                         <img src="images/lycanroc.png" alt="Lycanroc Midday Form">
-                        <p>Lycanroc (Midday)</p>
+                        <p class="pokemon_name">Lycanroc (Midday)</p>
                     </div>
 
                     <div class="lycanroc">
                         <img src="images/lycanroc_m.png" alt="Lycanroc Midnight Form">
-                        <p>Lycanroc (Midnight)</p>
+                        <p class="pokemon_name">Lycanroc (Midnight)</p>
                     </div>
 
                     <div class="nacli">
                         <img src="images/nacli.png" alt="Nacli">
-                        <p>Nacli</p>
+                        <p class="pokemon_name">Nacli</p>
                     </div>
 
                     <div class="naclstack">
                         <img src="images/naclstack.png" alt="Naclstack">
-                        <p>Naclstack</p>
+                        <p class="pokemon_name">Naclstack</p>
                     </div>
 
                     <div class="garganacl">
                         <img src="images/garganacl.png" alt="Garganacl">
-                        <p>Garganacl</p>
+                        <p class="pokemon_name">Garganacl</p>
                     </div>
 
                     <div class="glimmet">
                         <img src="images/glimmet.png" alt="Glimmet">
-                        <p>Glimmet</p>
+                        <p class="pokemon_name">Glimmet</p>
                     </div>
 
                     <div class="glimmora">
                         <img src="images/glimmora.png" alt="Glimmora">
-                        <p>Glimmora</p>
+                        <p class="pokemon_name">Glimmora</p>
                     </div>
 
                     <div class="iron_thorns">
                         <img src="images/iron_thorns.png" alt="Iron Thorns">
-                        <p>Iron Thorns</p>
+                        <p class="pokemon_name violet">Iron Thorns*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_17">
                 <div class="type_title">
-                    <p id="steel">Steel</p>
+                    <p class="type_name" id="steel">Steel</p>
                 </div>
                 <div class="images">
                     <div class="bisharp">
                         <img src="images/bisharp.png" alt="Bisharp">
-                        <p>Bisharp</p>
+                        <p class="pokemon_name">Bisharp</p>
                     </div>
 
                     <div class="corviknight">
                         <img src="images/corviknight.png" alt="Corviknight">
-                        <p>Corviknight</p>
+                        <p class="pokemon_name">Corviknight</p>
                     </div>
 
                     <div class="cufant">
                         <img src="images/cufant.png" alt="Cufant">
-                        <p>Cufant</p>
+                        <p class="pokemon_name">Cufant</p>
                     </div>
 
                     <div class="copperajah">
                         <img src="images/copperajah.png" alt="Copperajah">
-                        <p>Copperajah</p>
+                        <p class="pokemon_name">Copperajah</p>
                     </div>
 
                     <div class="iron_treads">
                         <img src="images/iron_treads.png" alt="Iron Treads">
-                        <p>Iron Treads</p>
+                        <p class="pokemon_name violet">Iron Treads*</p>
                     </div>
                 </div>
             </div>
 
             <div class="type_box" id="type_18">
                 <div class="type_title">
-                    <p id="water">Water</p>
+                    <p class="type_name" id="water">Water</p>
                 </div>
                 <div class="images">
                     <div class="golduck">
                         <img src="images/golduck.png" alt="Golduck">
-                        <p>Golduck</p>
+                        <p class="pokemon_name">Golduck</p>
                     </div>
 
                     <div class="vaporeon">
                         <img src="images/vaporeon.png" alt="Vaporeon">
-                        <p>Vaporeon</p>
+                        <p class="pokemon_name">Vaporeon</p>
                     </div>
 
                     <div class="buizel">
                         <img src="images/buizel.png" alt="Buizel">
-                        <p>Buizel</p>
+                        <p class="pokemon_name">Buizel</p>
                     </div>
 
                     <div class="floatzel">
                         <img src="images/floatzel.png" alt="Floatzel">
-                        <p>Floatzel</p>
+                        <p class="pokemon_name">Floatzel</p>
                     </div>
 
                     <div class="iron_bundle">
                         <img src="images/iron_bundle.png" alt="Iron Bundle">
-                        <p>Iron Bundle</p>
+                        <p class="pokemon_name violet">Iron Bundle*</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="bottom" class="col-span-full">
+            <p>All images used are used for a transformative work and nonprofit. The images are copyrighted or is a registered trademark. The contributor claims fair use. No copyright infringement is intended.</p>
+
+            <p>Certain materials are included under fair use exemption of the U.S. Copyright Law and are restricted from further use.</p>
+
+            <p>© 2023 Pokémon. © 1995–2023 Nintendo/Creatures Inc./GAME FREAK inc.</p>
         </section>
     </div>
     <script src="js/main.js"></script>
